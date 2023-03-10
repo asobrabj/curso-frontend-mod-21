@@ -1,5 +1,5 @@
 # curso-frontend-mod-21"
-curso-frontend-mod-20"
+curso-frontend-mod-21"
 # Gulp II
 
 Kit de ferramentas de automação de tarefas baseada em JavaScript
@@ -55,4 +55,4 @@ Todo o processo é executado a partir node.js e gulp-cli (linha de comando)
 - Executar o comando:
 ```
 npm install
-```# curso-frontend-mod-20
+```# curso-frontend-mod-21
