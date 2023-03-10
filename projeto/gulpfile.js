@@ -9,6 +9,8 @@ const scriptscss = require('gulp-strip-css-comments')
 const htmlmin    = require('gulp-htmlmin')
 const { series, parallel } = require('gulp')
 const babel      = require('gulp-babel')
+const browserSync = require('browser-sync').create()
+const reload = browserSync.reload
 
 function tarefasCSS(callback){
     
@@ -52,7 +54,6 @@ function tarefasJS(callback){
 }
 
 
-
 function tarefasImagem(){
 
     return gulp.src('./src/images/*')
@@ -80,11 +81,28 @@ function tarefasHtml(callback){
 }
 
 
+gulp.task('serve',function(){
+
+    browserSync.init({
+        server: {
+            baseDir: "./dist"
+        }
+    })
+    gulp.watch('./dist/*.html').on('change', reload)
+})
+
+function end(cbe){
+    console.log('Tarefas concluídas!')
+    return cbe()
+}
+
+const process = series(tarefasHtml, tarefasCSS, tarefasJS, end )
+
 exports.styles  = tarefasCSS
 exports.scripts = tarefasJS
 exports.images  = tarefasImagem
 
 //exports.default = series(tarefasHtml, tarefasCSS, tarefasJS )
-exports.default = parallel(tarefasHtml, tarefasCSS, tarefasJS )
+exports.default = process
 
 
