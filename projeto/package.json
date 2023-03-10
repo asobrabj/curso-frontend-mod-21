@@ -1,22 +1,22 @@
 {
-  "name": "ebac-pasta-do-exercicio-20",
+  "name": "ebac-pasta-do-exercicio-21",
   "version": "1.0.0",
-  "description": "curso-frontend-mod-20\" # Gulp",
+  "description": "curso-frontend-mod-21\" # Gulp",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/asobrabj/curso-frontend-mod-20.git"
+    "url": "git+https://github.com/asobrabj/curso-frontend-mod-21.git"
   },
   "keywords": [],
   "author": "Jose Barbosa",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/asobrabj/curso-frontend-mod-20/issues"
+    "url": "https://github.com/asobrabj/curso-frontend-mod-21/issues"
   },
-  "homepage": "https://github.com/asobrabj/curso-frontend-mod-20#readme",
+  "homepage": "https://github.com/asobrabj/curso-frontend-mod-21#readme",
   "dependencies": {
     "bootstrap": "^5.1.0",
     "jquery": "^3.6.0"
